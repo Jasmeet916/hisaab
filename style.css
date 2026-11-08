@@ -1,0 +1,134 @@
+/* 1. Reset: make sizing predictable everywhere */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Page-wide defaults */
+body {
+  font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+  background-color: #f4f6f5;
+  color: #1f2933;
+  line-height: 1.5;
+}
+
+/* 3. The green bar at the top */
+.top-bar {
+  background-color: #1cc29f;
+  color: white;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 4. Keep content a readable width, centered */
+.container {
+  max-width: 600px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+/* 5. The two balance cards, side by side */
+.balance-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.card {
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.card .label {
+  font-size: 14px;
+}
+
+.card .amount {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.owed {
+  background-color: #e3f8f2;
+  color: #0b7a61;
+}
+
+.owe {
+  background-color: #fdeaea;
+  color: #b42318;
+}
+
+/* 6. The list of groups */
+.group-list {
+  list-style: none;
+  background-color: white;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.group-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.group-list li:last-child {
+  border-bottom: none;
+}
+
+.positive { color: #0b7a61; }
+.negative { color: #b42318; }
+.settled  { color: #9aa5b1; }
+
+/* 7. The button */
+.primary-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: white;
+  background-color: #1cc29f;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.primary-button:hover {
+  background-color: #17a588;
+}
+
+/* 8. The link at the bottom */
+.activity-link {
+  display: block;
+  margin-top: 24px;
+  text-align: center;
+  color: #1cc29f;
+  text-decoration: none;
+}
+
+/* 9. The "new group" text box and button */
+.new-group {
+  display: flex;
+  gap: 8px;
+}
+
+.new-group input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+}
+
+.new-group .primary-button {
+  width: auto;
+}

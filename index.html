@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hisaab</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="top-bar">
+      <h1>Hisaab</h1>
+      <p>Hi, Jasmeet</p>
+    </header>
+
+    <main class="container">
+      <section class="balance-cards">
+        <div class="card owed">
+          <p class="label">You are owed</p>
+          <p class="amount">₹850</p>
+        </div>
+        <div class="card owe">
+          <p class="label">You owe</p>
+          <p class="amount">₹1,500</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Your groups</h2>
+        <ul id="group-list" class="group-list">
+          <li>
+            <span>Manali trip</span>
+            <span class="positive">you are owed ₹850</span>
+          </li>
+          <li>
+            <span>Flat 4B</span>
+            <span class="negative">you owe ₹300</span>
+          </li>
+          <li>
+            <span>Goa trip</span>
+            <span class="negative">you owe ₹1,200</span>
+          </li>
+          <li>
+            <span>College canteen</span>
+            <span class="settled">settled up</span>
+          </li>
+        </ul>
+        <div class="new-group">
+          <input id="group-name" type="text" placeholder="New group name, like Goa trip">
+          <button id="create-button" class="primary-button">+ Create group</button>
+        </div>
+      </section>
+
+      <a class="activity-link" href="activity.html">View all activity →</a>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
